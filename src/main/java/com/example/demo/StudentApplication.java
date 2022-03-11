@@ -9,18 +9,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@Controller
-@RequestMapping
 public class StudentApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(StudentApplication.class, args);
-
-	}
-	@GetMapping
-	public @ResponseBody
-	String genereteGet(){
-		return "hello" ;
 	}
 
 }
