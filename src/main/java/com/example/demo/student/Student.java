@@ -1,6 +1,20 @@
 package com.example.demo.student;
 
+import javax.persistence.*;
+
+@Entity
+@Table
 public class Student {
+    @SequenceGenerator(
+            name="student-sequence" ,
+            sequenceName = "student-sequence" ,
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.AUTO ,
+            generator = "student-sequence"
+    )
+    @Id
     private int id ;
     private String name ;
     private String email ;
@@ -11,6 +25,10 @@ public class Student {
         this.name = name;
         this.email = email;
         this.age = age;
+    }
+
+    public Student() {
+
     }
 
     public int getId() {

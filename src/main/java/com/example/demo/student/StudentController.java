@@ -17,6 +17,7 @@ public class StudentController {
     @GetMapping("/api/v1/student")
     public List<Student> getStudent(){
         return this.studentService.getStudent() ;
+
     }
 
 }
