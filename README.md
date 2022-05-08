@@ -6,3 +6,8 @@ DEPENDENCIES WITH SPRING INITIALIZER :
 1-Spring Web  
 2-Spring Data JPA  
 3-PostregSQL Driver  
+
+The diagram :
+
+![diagram]( https://github.com/bilelfeki/SpringBoot-MVC/blob/main/diagram/Package%20student.png?raw=true)
+
